@@ -45,7 +45,7 @@ pipeline {
     post {
         always {
             // Clean up or perform any necessary tasks after the pipeline run
-            sh "java -jar ./target/spring-0.0.1-SNAPSHOT.jar"
+//             sh "java -jar ./target/spring-0.0.1-SNAPSHOT.jar"
         }
     }
 }
