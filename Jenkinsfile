@@ -13,7 +13,7 @@ pipeline {
                 git 'https://github.com/Sanjay-Khatri/SimpleSpringProject.git'
 
                 // Run Maven on a Unix agent.
-                sh "mvn -Dmaven.test.failure.ignore=true clean package"
+                sh "mvn -Dmaven.test.failure.ignore=true clean install"
 
                 // To run Maven on a Windows agent, use
                 // bat "mvn -Dmaven.test.failure.ignore=true clean package"
