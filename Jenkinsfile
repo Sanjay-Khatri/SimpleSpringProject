@@ -29,13 +29,14 @@ pipeline {
                 }
             }
         }
-        stage('Run JAR') {
-            steps {
-                script {
-                    // Run the Spring Boot JAR file
-                    bat "java -jar target/spring-0.0.1-SNAPSHOT.jar"
-                }
-            }
-        }
+//         ITS OF NO USE BECAUSE IT RUNS THE BUILD USING JENKINS JDK MAVEN RESOURCES
+//         stage('Run JAR') {
+//             steps {
+//                 script {
+//                     // Run the Spring Boot JAR file
+//                     bat "java -jar target/spring-0.0.1-SNAPSHOT.jar"
+//                 }
+//             }
+//         }
     }
 }
