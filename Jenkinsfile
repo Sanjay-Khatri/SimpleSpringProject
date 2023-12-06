@@ -29,5 +29,13 @@ pipeline {
                 }
             }
         }
+        stage('Run JAR') {
+            steps {
+                script {
+                    // Run the Spring Boot JAR file
+                    bat "java -jar target/spring-0.0.1-SNAPSHOT.jar"
+                }
+            }
+        }
     }
 }
