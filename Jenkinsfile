@@ -3,6 +3,7 @@ pipeline {
 
     tools {
         maven "MavenRepo",
+
         jdk "JAVA_HOME"
     }
 
