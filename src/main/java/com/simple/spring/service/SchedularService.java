@@ -16,6 +16,7 @@ public class SchedularService implements Runnable{
     @Autowired
     private TaskScheduler taskScheduler;
 
+
 //    @Scheduled(cron = "0/1 0/1 * 1/1 * ? *")
     public void run(){
         while(true){
