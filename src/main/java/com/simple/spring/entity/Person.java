@@ -14,7 +14,6 @@ public class Person {
     private Address address;
 
     private class Address {
-
         private int houseNo;
         private String Address;
     }
