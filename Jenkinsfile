@@ -3,9 +3,16 @@ pipeline {
 
     tools {
         maven "MavenRepo"
+        java "JAVA_HOME"
     }
 
     stages {
+
+        stage('Which Java?') {
+            steps {
+                bat 'java --version'
+            }
+        }
 
         stage('Checkout') {
             steps {
